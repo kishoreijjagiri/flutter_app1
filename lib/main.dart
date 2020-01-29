@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'app_screens/first_screen.dart';
+
 void main()=>runApp(MyFlutterApp());
 
 
@@ -9,19 +11,11 @@ class MyFlutterApp extends StatelessWidget
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
-        title: "my app title",
+      debugShowCheckedModeBanner: false,
+        title: "my app titleee",
         home:Scaffold(
-          appBar: AppBar(title: Text("my app"),),
-          body:  Material(
-            color: Colors.amber,
-            child:Center(
-              child: Text(
-                "hellowdd world",
-                textDirection: TextDirection.ltr,
-                style: TextStyle(color: Colors.white,fontSize: 40.0),
-              ),
-            )
-            ,),
+          appBar: AppBar(title: Text("my aa app"),),
+          body:  FirstScreen()
         )
 
     );
